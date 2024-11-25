@@ -19,8 +19,10 @@ spec:
           name: synergychat-testram
           resources:
             limits:
-              memory: 256Mi
+              memory: 16Mi
               cpu:
+            requests:
+              memory: 10Mi
           env:
             - name: MEGABYTES
               valueFrom:

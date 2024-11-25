@@ -4,8 +4,7 @@ metadata:
   labels:
     app: synergychat-testcpu
   name: synergychat-testcpu
-spec:
-  replicas: 1
+spec:  
   selector:
     matchLabels:
       app: synergychat-testcpu
@@ -20,4 +19,7 @@ spec:
           resources:
             limits:
               memory:
-              cpu: 50m
+              cpu: 20m
+            requests:
+              memory:
+              cpu: 5m
